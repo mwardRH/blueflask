@@ -7,7 +7,7 @@ application = Flask(__name__)
 def hello():
     return "Hello BLUE!"
 
-@app.route("/hostname/")
+@application.route("/hostname/")
 def return_hostname():
     return "This is an example wsgi app served from {} to {}".format(socket.gethostname(), request.remote_addr)
 
