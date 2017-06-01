@@ -1,6 +1,6 @@
 import socket
+from flask import Flask, request
 
-from flask import Flask
 application = Flask(__name__)
 
 @application.route("/")
